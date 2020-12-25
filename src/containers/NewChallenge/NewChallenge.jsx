@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { Link, useHistory } from 'react-router-dom';
-import { ChallengesContext } from '../ChallengesContext';
+import { ChallengesContext } from '../../ChallengesContext';
 
 export const NewChallenge = () => {
 

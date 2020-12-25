@@ -1,0 +1,58 @@
+.challenge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    counter-reset: challengeCount;
+
+    &__title {
+        font-size: 44px;
+        color: #fff;
+        margin-bottom: 25px;
+        animation: neon-1 .1s ease-in-out infinite alternate;
+    }
+
+    &__list {
+        margin-bottom: 20px;
+    }
+
+    &__item {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 700;
+        padding: 5px 10px;
+        border-radius: 10px;
+        border: 1px solid #fff;
+        display: block;
+        margin-bottom: 10px;
+        transition: all .3s ease-in-out;
+        
+        &::before {
+            content: counter(challengeCount)'. ';
+            counter-increment: challengeCount;
+            font-size: 16px;
+        }
+
+        &:hover {
+            background: #fff;
+            color: #2c3e50;
+        }
+    }
+
+    &__btn {
+        font-size: 16px;
+        color: #fff;
+        border: 2px solid #3498db;
+        transition: all 150ms ease-in-out;
+        padding: 15px;
+        border-radius: 15px;
+        box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+        text-decoration: none;
+        text-transform: uppercase;
+        display: block;
+
+        &:hover {
+            box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+        }
+
+    }
+}

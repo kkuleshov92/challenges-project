@@ -1,7 +1,10 @@
 import { Route, Switch } from "react-router-dom";
-import { Challenge } from "./containers/Challenge";
-import { ChallengesList } from "./containers/ChallengesList";
-import { NewChallenge } from "./containers/NewChallenge";
+import { Challenge } from "./containers/Challenge/Challenge";
+import { ChallengesList } from "./containers/ChallengeList/ChallengesList";
+import { NewChallenge } from "./containers/NewChallenge/NewChallenge";
+
+import './style/main.scss'
+
 
 function App() {
   return (

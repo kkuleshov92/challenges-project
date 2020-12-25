@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Link, Redirect, useParams } from "react-router-dom";
-import { ChallengesContext } from "../ChallengesContext";
+import { ChallengesContext } from "../../ChallengesContext";
 
 const chunk = (arr, size) => {
   return Array.from({ length: Math.ceil(arr.length / size) }, (v, i) =>
