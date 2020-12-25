@@ -1,12 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter as Router } from 'react-router-dom'
+import { ChallengesProvider } from './ChallengesContext.jsx'
+
+import './mvp.css'
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ChallengesProvider>
+      <Router>
+        <App />
+      </Router>
+    </ChallengesProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

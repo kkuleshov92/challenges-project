@@ -1,0 +1,2 @@
+export const CREATE_CHALLENGE = "CREATE_CHALLENGE";
+export const TOGGLE_DAY = "TOGGLE_DAY";
